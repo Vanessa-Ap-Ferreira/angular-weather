@@ -2,7 +2,7 @@ import { NgModule } from "@angular/core";
 import { CommonModule } from '@angular/common';
 
 import { LoaderComponent } from './loader/loader.component';
-import { DetalidWeatherComponent } from './detalid-weather/detalid-weather.component';
+import { DetailedWeatherComponent } from './detailed-weather/detailed-weather.component';
 
 @NgModule({
   imports: [
@@ -10,8 +10,12 @@ import { DetalidWeatherComponent } from './detalid-weather/detalid-weather.compo
   ],
   declarations: [
     LoaderComponent,
-    DetalidWeatherComponent,
+    DetailedWeatherComponent
   ],
+  exports: [
+    LoaderComponent,
+    DetailedWeatherComponent,
+  ]
 })
 export class ComponentsModule {
 }

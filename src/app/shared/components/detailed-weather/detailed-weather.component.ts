@@ -1,17 +1,18 @@
-import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Input, OnInit } from '@angular/core';
 import { Weather } from '../../models/weather.model';
 
 @Component({
-  selector: 'jv-detalid-weather',
-  templateUrl: './detalid-weather.component.html',
-  styleUrls: ['./detalid-weather.component.scss'],
+  selector: 'jv-detailed-weather',
+  templateUrl: './detailed-weather.component.html',
+  styleUrls: ['./detailed-weather.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class DetalidWeatherComponent {
+export class DetailedWeatherComponent  implements OnInit {
 
   @Input() weather: Weather;
 
   ngOnInit() {
+    console.log('teste') 
     console.log(this.weather)
   }
 

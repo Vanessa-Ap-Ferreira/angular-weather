@@ -24,7 +24,7 @@ import { CurrentWeatherComponent } from './components/current-weather/current-we
   ],
   declarations: [
     HomePage,
-    CurrentWeatherComponent
+    CurrentWeatherComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })

@@ -9,9 +9,10 @@
         <a class="card-link" (click)="onToggleBookmark()">
           {{ isFavorite ? 'Remover dos favoritos' : 'Adicionar aos favoritos' }}
         </a>
-        <a class="card-link"
-           routerLink="/details">
-          Ver detalhes
+        <a class="card-link" 
+           routerLink="details"
+           [queryParams]="{ lat: cityWeather.city.coord.lat, lon: cityWeather.city.coord.lon }">
+          Detalhes
         </a>
       </div>
   

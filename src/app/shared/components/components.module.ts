@@ -5,8 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
 
 import { LoaderComponent } from './loader/loader.component';
-import { DetailedWeatherComponent } from './detailed-weather/detailed-weather.component';
 import { CitiesTypeaheadComponent } from './cities-typeahead/cities-typeahead.component';
+import { DetailedWeatherComponent } from './detailed-weather/detailed-weather.component';
 
 @NgModule({
   imports: [
